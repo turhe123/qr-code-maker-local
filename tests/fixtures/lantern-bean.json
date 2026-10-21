@@ -1,0 +1,15 @@
+{
+  "url": "https://example.org/lantern-bean/menu",
+  "wifi": {
+    "ssid": "LanternGuest",
+    "password": "cocoa-moth-42",
+    "security": "WPA"
+  },
+  "contact": {
+    "first": "Ada",
+    "last": "Brook",
+    "phone": "+1 555 0142",
+    "email": "ada@example.org",
+    "org": "Lantern Bean Cafe"
+  }
+}

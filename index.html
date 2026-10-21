@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- SEO:START — the builder rewrites title / description / keywords for search (see CLAUDE.md) -->
+  <title>Free QR Code Generator – Static, No Sign-Up, Never Expires</title>
+  <meta name="description" content="Make static QR codes for links, Wi-Fi, text, SMS and vCard contacts. Download PNG or SVG that never expire. No sign-up, no tracking, runs in your browser.">
+  <meta name="keywords" content="qr code generator, free qr code generator no sign up, wifi qr code generator, qr code for url, qr code svg, qr code that never expires, vcard qr code, static qr code">
+  <!-- SEO:END -->
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e0f14" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://turhe123.github.io/qr-code-maker-local/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Static QR Code Maker – Free, Private, In Your Browser">
+  <meta property="og:description" content="Make QR codes for links, Wi-Fi, text and contacts in your browser, saved as PNG or SVG that never expire. Free and open source, nothing is uploaded, works offli">
+  <meta property="og:url" content="https://turhe123.github.io/qr-code-maker-local/">
+  <meta property="og:image" content="https://turhe123.github.io/qr-code-maker-local/docs/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Static QR Code Maker">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Static QR Code Maker – Free, Private, In Your Browser">
+  <meta name="twitter:description" content="Make QR codes for links, Wi-Fi, text and contacts in your browser, saved as PNG or SVG that never expire. Free and open source, nothing is uploaded, works offli">
+  <meta name="twitter:image" content="https://turhe123.github.io/qr-code-maker-local/docs/og.png">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Static QR Code Maker",
+    "alternateName": "Static QR Code Maker – Free, Private, In Your Browser",
+    "description": "Make QR codes for links, Wi-Fi, text and contacts in your browser, saved as PNG or SVG that never expire. Free and open source, nothing is uploaded, works offli",
+    "url": "https://turhe123.github.io/qr-code-maker-local/",
+    "image": "https://turhe123.github.io/qr-code-maker-local/docs/og.png",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript. Works offline after the first visit.",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "license": "https://opensource.org/licenses/MIT",
+    "softwareVersion": "1.0.0",
+    "author": { "@type": "Person", "name": "Or Davidai Bachar", "url": "https://github.com/turhe123" },
+    "sameAs": ["https://github.com/turhe123/qr-code-maker-local"]
+  }
+  </script>
+  <script src="vendor/qrcode-generator/qrcode.js" defer></script>
+  <!-- Page views are counted with GoatCounter: no cookies, no personal data, open source. -->
+  <script data-goatcounter="https://turhe123.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#tool">Skip to the tool</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="./" aria-label="Static QR Code Maker home">
+        <img class="brand__icon" src="icon.svg" alt="" width="28" height="28">
+        <span class="brand__name">Static QR Code Maker</span>
+      </a>
+      <nav class="site-nav" aria-label="Page">
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/turhe123/qr-code-maker-local" rel="noopener">GitHub</a>
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener" class="site-nav__more">More tools</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <!-- HERO:START — the builder may refine the headline and promise; keep the trust badges -->
+      <h1 class="hero__title">Static QR Code Maker</h1>
+      <p class="hero__lead">Make QR codes for links, Wi-Fi, text and contacts in your browser, saved as PNG or SVG that never expire.</p>
+      <!-- HERO:END -->
+      <ul class="badges" aria-label="Why this tool is safe to use">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v6c0 4 3 7 7 9 4-2 7-5 7-9V6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Runs in your browser, files never leave your device</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Free, open source, no account, no ads</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Works offline after the first visit</li>
+      </ul>
+    </section>
+
+    <section class="container" id="tool" aria-labelledby="tool-title">
+      <div class="tool-card">
+        <!-- TOOL:START — the builder replaces everything between these markers with the real tool UI -->
+        <h2 id="tool-title" class="visually-hidden">Make a static QR code</h2>
+        <div class="qr-types" role="group" aria-label="What the QR code contains">
+          <button type="button" class="qr-type" data-type="url" aria-pressed="true">Link</button>
+          <button type="button" class="qr-type" data-type="text" aria-pressed="false">Text</button>
+          <button type="button" class="qr-type" data-type="wifi" aria-pressed="false">Wi-Fi</button>
+          <button type="button" class="qr-type" data-type="contact" aria-pressed="false">Contact</button>
+          <button type="button" class="qr-type" data-type="email" aria-pressed="false">Email</button>
+          <button type="button" class="qr-type" data-type="phone" aria-pressed="false">Phone</button>
+          <button type="button" class="qr-type" data-type="sms" aria-pressed="false">SMS</button>
+        </div>
+
+        <div class="qr-layout">
+          <form class="qr-form" id="qr-form" autocomplete="off" novalidate>
+            <fieldset class="qr-fields" data-for="url">
+              <legend class="visually-hidden">Link</legend>
+              <div class="field">
+                <label for="f-url">Web address</label>
+                <input id="f-url" name="url" type="url" inputmode="url" spellcheck="false" value="https://example.org/lantern-bean/menu" placeholder="https://example.org/menu">
+                <span class="field__hint">The link is stored inside the code itself, with no redirect in between.</span>
+              </div>
+            </fieldset>
+
+            <fieldset class="qr-fields" data-for="text" hidden>
+              <legend class="visually-hidden">Text</legend>
+              <div class="field">
+                <label for="f-text">Text</label>
+                <textarea id="f-text" name="text" placeholder="Any text, up to about 2,900 bytes"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="qr-fields" data-for="wifi" hidden>
+              <legend class="visually-hidden">Wi-Fi network</legend>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="f-ssid">Network name (SSID)</label>
+                  <input id="f-ssid" name="ssid" type="text" spellcheck="false">
+                </div>
+                <div class="field">
+                  <label for="f-wifi-pass">Password</label>
+                  <input id="f-wifi-pass" name="wifiPass" type="text" spellcheck="false">
+                </div>
+                <div class="field">
+                  <label for="f-wifi-sec">Security</label>
+                  <select id="f-wifi-sec" name="wifiSec">
+                    <option value="WPA" selected>WPA / WPA2 / WPA3</option>
+                    <option value="WEP">WEP</option>
+                    <option value="nopass">None (open network)</option>
+                  </select>
+                </div>
+                <div class="field qr-check-field">
+                  <label class="check" for="f-wifi-hidden"><input id="f-wifi-hidden" name="wifiHidden" type="checkbox"> Hidden network</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="qr-fields" data-for="contact" hidden>
+              <legend class="visually-hidden">Contact card</legend>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="f-first">First name</label>
+                  <input id="f-first" name="first" type="text" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-last">Last name</label>
+                  <input id="f-last" name="last" type="text" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-c-phone">Phone</label>
+                  <input id="f-c-phone" name="cPhone" type="tel" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-c-email">Email</label>
+                  <input id="f-c-email" name="cEmail" type="email" autocomplete="off">
+                </div>
+                <div class="field">
+                  <label for="f-org">Organisation</label>
+                  <input id="f-org" name="org" type="text" autocomplete="off">
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="qr-fields" data-for="email" hidden>
+              <legend class="visually-hidden">Email</legend>
+              <div class="field">
+                <label for="f-email-to">Send to</label>
+                <input id="f-email-to" name="emailTo" type="email" autocomplete="off" placeholder="hello@example.org">
+              </div>
+              <div class="field">
+                <label for="f-email-subject">Subject (optional)</label>
+                <input id="f-email-subject" name="emailSubject" type="text">
+              </div>
+              <div class="field">
+                <label for="f-email-body">Message (optional)</label>
+                <textarea id="f-email-body" name="emailBody" rows="3"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="qr-fields" data-for="phone" hidden>
+              <legend class="visually-hidden">Phone number</legend>
+              <div class="field">
+                <label for="f-phone">Phone number</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="off" placeholder="+1 555 0100">
+                <span class="field__hint">Include the country code so it works abroad.</span>
+              </div>
+            </fieldset>
+
+            <fieldset class="qr-fields" data-for="sms" hidden>
+              <legend class="visually-hidden">Text message</legend>
+              <div class="field">
+                <label for="f-sms-to">Phone number</label>
+                <input id="f-sms-to" name="smsTo" type="tel" autocomplete="off" placeholder="+1 555 0100">
+              </div>
+              <div class="field">
+                <label for="f-sms-body">Message (optional)</label>
+                <textarea id="f-sms-body" name="smsBody" rows="3"></textarea>
+              </div>
+            </fieldset>
+
+            <details class="qr-options" open>
+              <summary>Appearance and error correction</summary>
+              <div class="options">
+                <div class="field">
+                  <label for="o-ecc">Error correction</label>
+                  <select id="o-ecc" name="ecc">
+                    <option value="L">Low (7%)</option>
+                    <option value="M" selected>Medium (15%)</option>
+                    <option value="Q">Quartile (25%)</option>
+                    <option value="H">High (30%)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="o-size">PNG size (pixels)</label>
+                  <input id="o-size" name="size" type="number" min="64" max="4096" step="16" value="1024" inputmode="numeric">
+                </div>
+                <div class="field">
+                  <label for="o-margin">Quiet zone (modules)</label>
+                  <input id="o-margin" name="margin" type="number" min="0" max="16" step="1" value="4" inputmode="numeric">
+                </div>
+                <div class="field qr-colors">
+                  <div class="qr-color">
+                    <label for="o-fg">Foreground</label>
+                    <input id="o-fg" name="fg" type="color" value="#000000">
+                  </div>
+                  <div class="qr-color">
+                    <label for="o-bg">Background</label>
+                    <input id="o-bg" name="bg" type="color" value="#ffffff">
+                  </div>
+                </div>
+              </div>
+              <p class="field__hint qr-style-note">Modules are square for the most reliable scanning. No logo, no frame, no watermark.</p>
+            </details>
+          </form>
+
+          <div class="results qr-output" id="results" aria-live="polite">
+            <div class="alert alert--error" id="qr-error" role="alert" hidden></div>
+            <div class="result qr-card" id="qr-card">
+              <div class="preview qr-preview">
+                <canvas id="qr-canvas" class="qr-canvas" width="320" height="320" role="img" aria-label="QR code preview"></canvas>
+                <img id="qr-img" class="qr-img" alt="QR code image, long-press to save" width="320" height="320">
+              </div>
+              <p class="qr-readout stat" id="qr-readout"></p>
+              <ul class="qr-warnings" id="qr-warnings"></ul>
+              <div class="qr-actions">
+                <button type="button" class="btn btn--primary" id="dl-png">Download qr-code.png</button>
+                <button type="button" class="btn" id="dl-svg">Download qr-code.svg</button>
+                <button type="button" class="btn btn--ghost" id="copy-img">Copy image</button>
+              </div>
+              <p class="field__hint qr-touch-hint">On a phone, long-press the code to save it to your photos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- TOOL:END -->
+      </div>
+    </section>
+
+    <section class="container section" id="how" aria-labelledby="how-title">
+      <h2 id="how-title" class="section__title">How it works</h2>
+      <!-- HOW:START — three honest steps for this tool -->
+      <ol class="steps">
+        <li><strong>Pick what to share.</strong> Choose Link, Wi-Fi, Contact, Text, Email, Phone or SMS and fill in the fields. The preview redraws as you type.</li>
+        <li><strong>Tune it if you like.</strong> Raise error correction for print that may get scuffed, set the size and quiet zone, and pick colours. A warning appears if the contrast could stop phones from reading it.</li>
+        <li><strong>Save PNG or SVG.</strong> The file is drawn on your device. The data sits inside the code itself, so it keeps working with no account, redirect or expiry date.</li>
+      </ol>
+      <!-- HOW:END -->
+    </section>
+
+    <section class="container section" id="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title" class="section__title">Questions, answered</h2>
+      <!-- FAQ:START — 4 to 6 questions; keep the privacy, offline and AI answers -->
+      <details class="faq" open>
+        <summary>Will these QR codes ever stop working?</summary>
+        <p>No. These are static codes: the link, Wi-Fi details or contact card are encoded directly in the black and white squares. There is no short link or redirect server in between, so nothing can expire, be switched off or be tracked. The trade-off is that you cannot edit a printed code later; make a new one if the content changes.</p>
+      </details>
+      <details class="faq">
+        <summary>Is my Wi-Fi password or contact data uploaded anywhere?</summary>
+        <p>No. Static QR Code Maker runs entirely in your browser. What you type stays in memory on your device, the code is computed with JavaScript, and nothing is sent to a server. You can disconnect from the internet and it keeps working.</p>
+      </details>
+      <details class="faq">
+        <summary>PNG or SVG, which should I download?</summary>
+        <p>PNG is a normal image at the pixel size you choose, good for documents, slides and messages. SVG is a vector file that stays sharp at any size, which is best for print shops, signs and menus. Both use crisp square modules with no blur.</p>
+      </details>
+      <details class="faq">
+        <summary>Why does it say my content is too long?</summary>
+        <p>A QR code holds at most about 2,900 bytes at Low error correction and about 1,270 at High. Emoji and non-Latin letters take 2 to 4 bytes each. Shorten the text or lower the error correction level. Long codes also get dense, so keep printed codes short where you can.</p>
+      </details>
+      <details class="faq">
+        <summary>Is it really free, and does it work offline?</summary>
+        <p>Yes to both. It is open source under the MIT license, with no account, no limits, no watermark and no ads. After your first visit the page is cached by a service worker, so it loads without a connection, and you can install it from your browser's menu as an app. If it saves you a subscription, you can say thanks on Ko-fi.</p>
+      </details>
+      <details class="faq">
+        <summary>Was this written by AI?</summary>
+        <p>Yes. Static QR Code Maker was generated by Claude Code from a written specification inside an automated pipeline, with a test suite that runs in a real browser. The full source is on GitHub, so you can read every line before you trust it with your data.</p>
+      </details>
+      <!-- FAQ:END -->
+    </section>
+
+    <section class="container section" id="support">
+      <div class="support-card">
+        <h2 class="section__title">Built by one person, given away for free</h2>
+        <p>Static QR Code Maker is a free alternative to paid tools like QR Code Generator Pro and QR Code Monkey. If it earns a place in your bookmarks, a coffee keeps the updates coming.</p>
+        <a class="btn btn--kofi" href="https://ko-fi.com/leodavidai" rel="noopener">☕ Support Or on Ko-fi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="site-footer__links">
+        <a href="https://github.com/turhe123/qr-code-maker-local" rel="noopener">Source on GitHub</a> ·
+        <a href="https://github.com/turhe123/qr-code-maker-local/issues" rel="noopener">Report a bug</a> ·
+        <a href="https://turhe123.github.io/web-tools/" rel="noopener">More free web tools</a> ·
+        <a href="https://ko-fi.com/leodavidai" rel="noopener">Ko-fi</a>
+      </p>
+      <p class="site-footer__disclosure"><strong>Built with AI.</strong> Static QR Code Maker was written by Claude Code inside an automated pipeline from a plain-English spec, as a clean-room implementation: no code or assets from any commercial product. It runs entirely in your browser, makes no network requests except an anonymous, cookieless page-view count, and has had less human review than hand-written software. Bug reports and pull requests are welcome.</p>
+      <p class="site-footer__copy">© 2026 Or Davidai Bachar · MIT License · <span id="sw-status" class="sw-status" aria-live="polite"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="site.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

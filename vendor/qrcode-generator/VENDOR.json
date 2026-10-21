@@ -1,0 +1,10 @@
+{
+  "name": "qrcode-generator",
+  "version": "1.4.4",
+  "license": "MIT",
+  "entry": "vendor/qrcode-generator/qrcode.js (classic script, global qrcode; const qr = qrcode(0, 'M'); qr.addData(text); qr.make(); qr.createSvgTag() / createDataURL())",
+  "sources": {
+    "qrcode.js": "https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js",
+    "LICENSE": "https://raw.githubusercontent.com/kazuhikoarase/qrcode-generator/master/LICENSE"
+  }
+}
